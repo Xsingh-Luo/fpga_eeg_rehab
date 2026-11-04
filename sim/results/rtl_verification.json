@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "dataset_right",
+      "post_warmup_exact_decisions": 251,
+      "final_decision": 65586237,
+      "label": 1,
+      "UART_AXIS_testbench_passed": true,
+      "legacy_UART_header_only_normalized_A0_to_41": true
+    },
+    {
+      "case": "dataset_left",
+      "post_warmup_exact_decisions": 251,
+      "final_decision": -23346001,
+      "label": 0,
+      "UART_AXIS_testbench_passed": true,
+      "legacy_UART_header_only_normalized_A0_to_41": true
+    },
+    {
+      "case": "live_two_channel",
+      "post_warmup_exact_decisions": 251,
+      "final_decision": -11213190,
+      "label": 0,
+      "UART_AXIS_testbench_passed": true,
+      "legacy_UART_header_only_normalized_A0_to_41": true
+    },
+    {
+      "case": "old744_regression_padded",
+      "post_warmup_exact_decisions": 251,
+      "final_decision": 3348214,
+      "label": 1,
+      "UART_AXIS_testbench_passed": true,
+      "legacy_UART_header_only_normalized_A0_to_41": true
+    }
+  ],
+  "board_test_pending": true
+}

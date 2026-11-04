@@ -1,0 +1,30 @@
+{
+  "bci_app": {
+    "bytes": 46228,
+    "sha256": "12319e866a654cbfc17e0e1cca6aa636f0d51dec2616ab08749fa4fe7b690369",
+    "elf_class": 32,
+    "elf_machine": "ARM",
+    "archived_privately": true
+  },
+  "bci_run": {
+    "bytes": 90656,
+    "sha256": "f0b3e143da96c95c25faa511a33d86cfe411c7c75610bd14e93bff77e470df42",
+    "elf_class": 32,
+    "elf_machine": "ARM",
+    "archived_privately": true
+  },
+  "st7789_display": {
+    "bytes": 87304,
+    "sha256": "5fa28dff082da67eff6f0b6bd83d7c19f6b221241ffb8ef41f9f968db62f1299",
+    "elf_class": 32,
+    "elf_machine": "ARM",
+    "archived_privately": true
+  },
+  "pl_sample_replay": {
+    "bytes": 54804,
+    "sha256": "d5f125b6aaf5914862713eda36cd760f7a5319e01cd26a72e9298398d4fe80f0",
+    "elf_class": 32,
+    "elf_machine": "ARM",
+    "archived_privately": true
+  }
+}

@@ -1,0 +1,30 @@
+#!/bin/sh
+# SysV entry point, installed only by the reviewed final-package installer.
+app=/root/bci/final
+pidfile=/run/bci_ui.pid
+running() {
+    test -f "$pidfile" || return 1
+    pid=$(cat "$pidfile")
+    case "$pid" in ''|*[!0-9]*) return 1;; esac
+    test "$(readlink "/proc/$pid/exe")" = "$app/bci_app"
+}
+case "${1:-}" in
+start)
+    if running; then echo 'BCI UI already running'; exit 0; fi
+    test -x "$app/bci_app" || exit 1
+    (cd "$app" && sha256sum -c source.sha256) > "$app/startup_verify.log" 2>&1 || exit 1
+    "$app/bci_app" --root "$app" > "$app/console.log" 2>&1 &
+    echo "$!" > "$pidfile"
+    ;;
+stop)
+    if running; then
+        kill -TERM "$pid"
+        tries=0
+        while running && test "$tries" -lt 8; do sleep 1; tries=$((tries+1)); done
+        if running; then echo 'BCI UI did not stop; inspect console.log' >&2; exit 1; fi
+    fi
+    ;;
+restart) "$0" stop && "$0" start;;
+status) if running; then echo 'BCI UI running'; else echo 'BCI UI stopped'; exit 1; fi;;
+*) echo 'Usage: bci-ui start|stop|restart|status' >&2; exit 2;;
+esac

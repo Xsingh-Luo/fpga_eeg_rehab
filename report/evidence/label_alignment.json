@@ -1,0 +1,12 @@
+{
+  "training_official_label_alignment": 420,
+  "evaluation_official_label_alignment": 320,
+  "training_lengths_by_session": [
+    120,
+    140,
+    160
+  ],
+  "exact_raw_trial_overlap": 0,
+  "labels_not_inverted": true,
+  "MAT_source_sha256": "802635475063e51aa8e3ed651411d751dcf8a7bbfe33ad4ba897bc36a19ab52f"
+}

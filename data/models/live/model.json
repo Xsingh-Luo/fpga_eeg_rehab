@@ -1,0 +1,16 @@
+{
+  "candidate_sha256": "7072e3700fa58fba9ed3a2061d715ac3f97faaa301c5393e921da0497813a229",
+  "svm_common_positive_scale": 1.0,
+  "live_channels": [
+    3,
+    4
+  ],
+  "pl_slots": [
+    "C3",
+    "ZERO",
+    "C4"
+  ],
+  "requires_PS_notch50_Q30": true,
+  "validated": false,
+  "status": "exploratory; no new independent acceptance"
+}

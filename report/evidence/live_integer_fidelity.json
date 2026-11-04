@@ -1,0 +1,27 @@
+{
+  "scope": "Quantization fidelity on fitting data only; not held-out accuracy",
+  "label_agreement": 60,
+  "trials": 60,
+  "integer_resubstitution": {
+    "trials": 60,
+    "correct": 42,
+    "accuracy": 0.7,
+    "balanced_accuracy": 0.7,
+    "confusion_rows_truth_cols_prediction_left_right": [
+      [
+        24,
+        6
+      ],
+      [
+        12,
+        18
+      ]
+    ],
+    "wilson_95_interval": [
+      0.5749129205308552,
+      0.8010183386123089
+    ],
+    "predicted_left": 36,
+    "predicted_right": 24
+  }
+}

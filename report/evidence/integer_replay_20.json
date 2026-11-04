@@ -1,0 +1,128 @@
+{
+  "scope": "Offline integer reference only; not new board inference",
+  "trials": 20,
+  "correct": 20,
+  "exact_reference_words": 20,
+  "predictions": [
+    {
+      "trial": 1,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "03e8c43d"
+    },
+    {
+      "trial": 2,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fe9bc4ae"
+    },
+    {
+      "trial": 3,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fec02b20"
+    },
+    {
+      "trial": 4,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "034c34ef"
+    },
+    {
+      "trial": 5,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fe81a1e8"
+    },
+    {
+      "trial": 6,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "04ab4a01"
+    },
+    {
+      "trial": 7,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "ff0e8376"
+    },
+    {
+      "trial": 8,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fea0c86a"
+    },
+    {
+      "trial": 9,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "feb2c084"
+    },
+    {
+      "trial": 10,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "0724e67b"
+    },
+    {
+      "trial": 11,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fe929c38"
+    },
+    {
+      "trial": 12,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "06208ac9"
+    },
+    {
+      "trial": 13,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "ff1bb882"
+    },
+    {
+      "trial": 14,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "04a80d73"
+    },
+    {
+      "trial": 15,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fecc050a"
+    },
+    {
+      "trial": 16,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "037c7d39"
+    },
+    {
+      "trial": 17,
+      "truth": 0,
+      "prediction": 0,
+      "decision_word": "fea09fec"
+    },
+    {
+      "trial": 18,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "04f28ba9"
+    },
+    {
+      "trial": 19,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "03dfae83"
+    },
+    {
+      "trial": 20,
+      "truth": 1,
+      "prediction": 1,
+      "decision_word": "04ce22f7"
+    }
+  ]
+}

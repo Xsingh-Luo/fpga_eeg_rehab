@@ -1,0 +1,15 @@
+{
+  "purpose": "Fixed B04 sample replay only; no live acquisition or Cyton configuration",
+  "samples": 744,
+  "channels": [
+    1,
+    2,
+    3
+  ],
+  "window": 626,
+  "valid_decisions": 119,
+  "simulation": "D:\\Projects\\NUECSDC_FPGA_Track\\FPGA2026QS\\validation\\axis_input_20261101_final",
+  "expected_encoding": "(signed_decision & 0xfffffffe) | label",
+  "raw_model_sha256": "938bc59e153148ded4a872de71d869acfcd5fc10373ed918f9c9c0fa2a1fa4cd",
+  "source": "ff_* parameter files used by the passed simulation, not raw unscaled model JSON"
+}

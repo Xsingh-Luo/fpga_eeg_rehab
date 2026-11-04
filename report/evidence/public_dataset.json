@@ -1,0 +1,131 @@
+{
+  "training_trials": 420,
+  "source": "matlab\\data\\subj04.mat",
+  "source_sha256": "802635475063e51aa8e3ed651411d751dcf8a7bbfe33ad4ba897bc36a19ab52f",
+  "model_compatibility_fix": "Global normalization over all six PL variances, fixed SELECT=[1,2,4,3], common CSP scale across bands; integer causal filters and final window250..875.",
+  "official_eval_labels_match_local_mat": true,
+  "selected_on_training_only": {
+    "reg": 0.05,
+    "C": 1,
+    "mean": 0.9428571428571428
+  },
+  "search": [
+    {
+      "reg": 0.05,
+      "C": 0.01,
+      "mean": 0.9142857142857144
+    },
+    {
+      "reg": 0.05,
+      "C": 0.1,
+      "mean": 0.9357142857142857
+    },
+    {
+      "reg": 0.05,
+      "C": 1,
+      "mean": 0.9428571428571428
+    },
+    {
+      "reg": 0.05,
+      "C": 10,
+      "mean": 0.9428571428571428
+    },
+    {
+      "reg": 0.2,
+      "C": 0.01,
+      "mean": 0.9166666666666667
+    },
+    {
+      "reg": 0.2,
+      "C": 0.1,
+      "mean": 0.9357142857142857
+    },
+    {
+      "reg": 0.2,
+      "C": 1,
+      "mean": 0.9404761904761905
+    },
+    {
+      "reg": 0.2,
+      "C": 10,
+      "mean": 0.9380952380952381
+    },
+    {
+      "reg": 0.5,
+      "C": 0.01,
+      "mean": 0.9095238095238096
+    },
+    {
+      "reg": 0.5,
+      "C": 0.1,
+      "mean": 0.9214285714285715
+    },
+    {
+      "reg": 0.5,
+      "C": 1,
+      "mean": 0.930952380952381
+    },
+    {
+      "reg": 0.5,
+      "C": 10,
+      "mean": 0.930952380952381
+    }
+  ],
+  "all320_integer_reference": {
+    "trials": 320,
+    "correct": 304,
+    "accuracy": 0.95,
+    "balanced_accuracy": 0.95,
+    "confusion_rows_truth_cols_prediction_left_right": [
+      [
+        149,
+        11
+      ],
+      [
+        5,
+        155
+      ]
+    ],
+    "wilson_95_interval": [
+      0.9203320781777203,
+      0.9689919788741009
+    ],
+    "predicted_left": 154,
+    "predicted_right": 166
+  },
+  "packaged20_integer_reference": {
+    "trials": 20,
+    "correct": 20,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "confusion_rows_truth_cols_prediction_left_right": [
+      [
+        10,
+        0
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "wilson_95_interval": [
+      0.8388748419471806,
+      1.0
+    ],
+    "predicted_left": 10,
+    "predicted_right": 10
+  },
+  "selection": "First20 in file order, no prediction-based cherry picking",
+  "sessions_train": [
+    "01T",
+    "02T",
+    "03T"
+  ],
+  "sessions_eval": [
+    "04E",
+    "05E"
+  ],
+  "scope": "Development benchmark; prior dataset investigation and existing model development are disclosed. ARM/PL comparison on the new parameter bank is pending.",
+  "samples_per_trial": 876,
+  "score_one_final_window_per_trial": true
+}

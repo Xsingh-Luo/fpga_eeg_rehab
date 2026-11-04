@@ -1,0 +1,41 @@
+# ============================================================
+# FPGA2026QS —— 行尾与文本处理约定
+#
+# 唯一原则：**git 的文件内容 = 磁盘上的文件内容，一个字节都不改。**
+# 本项目是 Windows 单机环境（Vivado / MATLAB / Python 都在 H: 盘），
+# 既有文件里有些是 CRLF、有些是 LF。任何自动行尾转换都会造成两种后果：
+#   ① git status 长期出现莫名其妙的改动（假修改）
+#   ② 脚本 / 仿真激励 / 激励向量被静默改写，排查起来极其费时
+# 所以统一声明为「非文本」，禁止一切转换。
+#
+# 维护提示：不要在这里加 `text` 或 `eol=` 规则。若确有文件需要转行尾，
+# 由人显式转换后单独提交，并在此文件里说明原因。
+# ============================================================
+
+# ---------- 默认：所有文件按原样进出，不做行尾转换、不做编码/文本规范化 ----------
+* -text
+
+# ---------- 二进制文件：禁止 diff 与合并尝试 ----------
+# （-text 已保证不转换，这里额外关掉 diff 以免把大文件当文本比对）
+*.bin   -text -diff
+*.mat   -text -diff
+*.npy   -text -diff
+*.npz   -text -diff
+*.pdf   -text -diff
+*.png   -text -diff
+*.jpg   -text -diff
+*.jpeg  -text -diff
+*.zip   -text -diff
+*.gdf   -text -diff
+*.dcp   -text -diff
+*.bit   -text -diff
+*.xsa   -text -diff
+
+# ---------- diff 显示优化（不影响存储内容，只影响 git diff 怎么展示）----------
+*.m  diff=matlab
+*.v  diff=verilog
+*.sv diff=verilog
+
+# ---------- 文档目录不计入语言统计 ----------
+参考资料/** linguist-documentation
+规划/**     linguist-documentation

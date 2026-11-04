@@ -1,0 +1,1050 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 08:56:47 2026
+| Host         : JiguangPro running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -file D:/Projects/NUECSDC_FPGA_Track/bld/knob5/bus_skew_final.rpt
+| Design       : ps_stream_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   49        [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[30]}]]
+                                              [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[30]}]]
+                                                                              Slow             37.500       0.892     36.608
+2   51        [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[30]}]]
+                                              [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[30]}]]
+                                                                              Slow             37.500       0.944     36.556
+3   53        [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[34]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[35]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[9]}]]
+                                              [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[34]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[35]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[9]}]]
+                                                                              Slow             37.500       1.129     36.371
+4   55        [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[0]} {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[1]}]]
+                                              [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]} {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]}]]
+                                                                              Slow             30.000       0.583     29.417
+5   57        [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[9]}]]
+                                              [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[9]}]]
+                                                                              Slow             30.000       1.041     28.959
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[30]}]] -to [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[30]}]] 37.500
+Requirement: 37.500ns
+Endpoints: 24
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_0            eeg_core_axis_clk     ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]/D
+                                                                            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]/D
+                                                                                                            Slow         0.892     36.608
+
+
+Slack (MET) :             36.608ns  (requirement - actual skew)
+  Endpoint Source:        ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Endpoint Destination:   ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Reference Source:       ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Destination:  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            37.500ns
+  Endpoint Relative Delay:   -1.976ns
+  Reference Relative Delay:  -3.480ns
+  Relative CRPR:              0.612ns
+  Actual Bus Skew:            0.892ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.421     2.500    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_clk
+                  SLICE_X29Y82         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[4]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X29Y82         FDRE (Prop_fdre_C_Q)         0.379     2.879 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[4]/Q
+                                       net (fo=1, routed)           0.793     3.672    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff[4]
+    Routing       SLICE_X28Y82         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.386     2.368    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.073     2.441 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.454     3.896    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.973 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.112     4.085    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     4.162 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.112     4.274    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.351 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.271     5.622    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_clk
+                  SLICE_X28Y82         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]/C
+                                       clock pessimism              0.097     5.718    
+                  SLICE_X28Y82         FDRE (Setup_fdre_C_D)       -0.070     5.648    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[4]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           3.672    
+                                       clock arrival                          5.648    
+  ---------------------------------------------------------------------------------
+                                       relative delay                        -1.976    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.267     2.250    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_clk
+                  SLICE_X29Y80         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[1]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X29Y80         FDRE (Prop_fdre_C_Q)         0.304     2.554 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff_reg[1]/Q
+                                       net (fo=1, routed)           0.287     2.841    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_hsdata_ff[1]
+    Routing       SLICE_X30Y80         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.552     2.631    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.077     2.708 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.597     4.305    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     4.390 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.123     4.513    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.085     4.598 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.123     4.721    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     4.806 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.421     6.227    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_clk
+                  SLICE_X30Y80         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]/C
+                                       clock pessimism             -0.097     6.131    
+                  SLICE_X30Y80         FDRE (Hold_fdre_C_D)         0.191     6.322    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/dest_hsdata_ff_reg[1]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           2.841    
+                                       clock arrival                          6.321    
+  ---------------------------------------------------------------------------------
+                                       relative delay                        -3.480    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[30]}]] -to [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[30]}]] 37.500
+Requirement: 37.500ns
+Endpoints: 24
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_0            eeg_core_axis_clk     ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]/D
+                                                                            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]/D
+                                                                                                            Slow         0.944     36.556
+
+
+Slack (MET) :             36.556ns  (requirement - actual skew)
+  Endpoint Source:        ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Endpoint Destination:   ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Reference Source:       ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Destination:  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            37.500ns
+  Endpoint Relative Delay:   -1.946ns
+  Reference Relative Delay:  -3.470ns
+  Relative CRPR:              0.581ns
+  Actual Bus Skew:            0.944ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.599     2.678    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_clk
+                  SLICE_X31Y108        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[31]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X31Y108        FDRE (Prop_fdre_C_Q)         0.379     3.057 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[31]/Q
+                                       net (fo=1, routed)           0.873     3.930    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff[31]
+    Routing       SLICE_X30Y108        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.386     2.368    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.073     2.441 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.454     3.896    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.973 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.112     4.085    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     4.162 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.112     4.274    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.351 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.432     5.783    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_clk
+                  SLICE_X30Y108        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]/C
+                                       clock pessimism              0.097     5.879    
+                  SLICE_X30Y108        FDRE (Setup_fdre_C_D)       -0.004     5.875    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[31]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           3.930    
+                                       clock arrival                          5.875    
+  ---------------------------------------------------------------------------------
+                                       relative delay                        -1.946    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.391     2.373    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_clk
+                  SLICE_X35Y100        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[3]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X35Y100        FDRE (Prop_fdre_C_Q)         0.304     2.677 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff_reg[3]/Q
+                                       net (fo=1, routed)           0.326     3.003    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_hsdata_ff[3]
+    Routing       SLICE_X38Y100        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.552     2.631    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.077     2.708 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.597     4.305    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     4.390 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.123     4.513    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.085     4.598 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.123     4.721    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     4.806 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.563     6.369    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_clk
+                  SLICE_X38Y100        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]/C
+                                       clock pessimism             -0.097     6.273    
+                  SLICE_X38Y100        FDRE (Hold_fdre_C_D)         0.201     6.474    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/dest_hsdata_ff_reg[3]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           3.003    
+                                       clock arrival                          6.473    
+  ---------------------------------------------------------------------------------
+                                       relative delay                        -3.470    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[34]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[35]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[9]}]] -to [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[34]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[35]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[9]}]] 37.500
+Requirement: 37.500ns
+Endpoints: 36
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_0            eeg_core_axis_clk     ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]/D
+                                                                            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]/D
+                                                                                                            Slow         1.129     36.371
+
+
+Slack (MET) :             36.371ns  (requirement - actual skew)
+  Endpoint Source:        ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Endpoint Destination:   ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Reference Source:       ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Destination:  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            37.500ns
+  Endpoint Relative Delay:   -1.700ns
+  Reference Relative Delay:  -3.379ns
+  Relative CRPR:              0.550ns
+  Actual Bus Skew:            1.129ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.429     2.508    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_clk
+                  SLICE_X28Y90         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[18]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X28Y90         FDRE (Prop_fdre_C_Q)         0.379     2.887 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[18]/Q
+                                       net (fo=1, routed)           1.022     3.909    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff[18]
+    Routing       SLICE_X33Y84         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.386     2.368    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.073     2.441 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.454     3.896    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.973 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.112     4.085    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     4.162 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.112     4.274    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.351 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.232     5.583    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_clk
+                  SLICE_X33Y84         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]/C
+                                       clock pessimism              0.097     5.679    
+                  SLICE_X33Y84         FDRE (Setup_fdre_C_D)       -0.070     5.609    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[18]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           3.909    
+                                       clock arrival                          5.609    
+  ---------------------------------------------------------------------------------
+                                       relative delay                        -1.700    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.268     2.251    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_clk
+                  SLICE_X27Y86         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[13]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X27Y86         FDRE (Prop_fdre_C_Q)         0.304     2.555 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff_reg[13]/Q
+                                       net (fo=1, routed)           0.333     2.887    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_hsdata_ff[13]
+    Routing       SLICE_X31Y80         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.552     2.631    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.077     2.708 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.597     4.305    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     4.390 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.123     4.513    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.085     4.598 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.123     4.721    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     4.806 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.421     6.227    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_clk
+                  SLICE_X31Y80         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]/C
+                                       clock pessimism             -0.097     6.131    
+                  SLICE_X31Y80         FDRE (Hold_fdre_C_D)         0.136     6.267    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/dest_hsdata_ff_reg[13]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           2.887    
+                                       clock arrival                          6.266    
+  ---------------------------------------------------------------------------------
+                                       relative delay                        -3.379    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[0]} {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[1]}]] -to [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]} {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]}]] 30.000
+Requirement: 30.000ns
+Endpoints: 2
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+eeg_core_axis_clk     clk_fpga_0            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]/D
+                                                                            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]/D
+                                                                                                            Slow         0.583     29.417
+
+
+Slack (MET) :             29.417ns  (requirement - actual skew)
+  Endpoint Source:        ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Endpoint Destination:   ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Reference Destination:  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            30.000ns
+  Endpoint Relative Delay:    4.966ns
+  Reference Relative Delay:   3.686ns
+  Relative CRPR:              0.697ns
+  Actual Bus Skew:            0.583ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.552     2.631    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.077     2.708 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.597     4.305    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     4.390 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.123     4.513    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.085     4.598 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.123     4.721    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     4.806 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.562     6.368    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_clk
+                  SLICE_X39Y106        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[1]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X39Y106        FDRE (Prop_fdre_C_Q)         0.348     6.716 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[1]/Q
+                                       net (fo=2, routed)           0.524     7.240    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff[1]
+    Routing       SLICE_X39Y107        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.391     2.373    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_clk
+                  SLICE_X39Y107        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]/C
+                                       clock pessimism              0.097     2.470    
+                  SLICE_X39Y107        FDRE (Setup_fdre_C_D)       -0.196     2.274    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[1]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           7.240    
+                                       clock arrival                          2.274    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         4.966    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.386     2.368    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.073     2.441 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.454     3.896    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.973 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.112     4.085    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     4.162 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.112     4.274    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.351 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.393     5.744    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_clk
+                  SLICE_X39Y106        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[0]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X39Y106        FDRE (Prop_fdre_C_Q)         0.304     6.048 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff_reg[0]/Q
+                                       net (fo=2, routed)           0.339     6.387    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_hsdata_ff[0]
+    Routing       SLICE_X39Y107        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.560     2.639    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_clk
+                  SLICE_X39Y107        FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]/C
+                                       clock pessimism             -0.097     2.543    
+                  SLICE_X39Y107        FDRE (Hold_fdre_C_D)         0.158     2.701    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/dest_hsdata_ff_reg[0]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           6.387    
+                                       clock arrival                          2.701    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         3.686    
+
+
+
+Id: 5
+set_bus_skew -from [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[9]}]] -to [get_cells [list {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[0]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[10]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[11]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[12]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[13]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[14]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[15]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[16]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[17]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[18]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[19]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[20]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[21]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[22]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[23]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[24]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[25]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[27]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[28]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[29]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[2]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[30]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[31]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[32]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[33]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[3]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[4]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[5]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[6]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[7]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[8]} \
+          {ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[9]}]] 30.000
+Requirement: 30.000ns
+Endpoints: 34
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+eeg_core_axis_clk     clk_fpga_0            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]/D
+                                                                            ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]/D
+                                                                                                            Slow         1.041     28.959
+
+
+Slack (MET) :             28.959ns  (requirement - actual skew)
+  Endpoint Source:        ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Endpoint Destination:   ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by eeg_core_axis_clk)
+  Reference Destination:  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            30.000ns
+  Endpoint Relative Delay:    5.340ns
+  Reference Relative Delay:   3.717ns
+  Relative CRPR:              0.581ns
+  Actual Bus Skew:            1.041ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.552     2.631    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.077     2.708 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.597     4.305    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.085     4.390 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.123     4.513    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.085     4.598 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.123     4.721    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     4.806 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.380     6.186    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_clk
+                  SLICE_X32Y79         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[26]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X32Y79         FDRE (Prop_fdre_C_Q)         0.398     6.584 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[26]/Q
+                                       net (fo=1, routed)           0.936     7.520    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff[26]
+    Routing       SLICE_X31Y86         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.272     2.255    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_clk
+                  SLICE_X31Y86         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]/C
+                                       clock pessimism              0.097     2.351    
+                  SLICE_X31Y86         FDRE (Setup_fdre_C_D)       -0.171     2.180    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[26]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           7.520    
+                                       clock arrival                          2.180    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         5.340    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock eeg_core_axis_clk rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.905     0.905    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.386     2.368    ps_stream_i/eeg_core/inst/core/u_pll/clk_in
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                    0.073     2.441 r  ps_stream_i/eeg_core/inst/core/u_pll/u_mmcm/CLKOUT0
+                                       net (fo=1, routed)           1.454     3.896    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk
+                  BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.973 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica_1/O
+                                       net (fo=26, routed)          0.112     4.085    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN_1
+                  BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     4.162 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst_replica/O
+                                       net (fo=2, routed)           0.112     4.274    ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_repN
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.351 r  ps_stream_i/eeg_core/inst/core/u_pll/axis_clk_BUFG_inst/O
+                                       net (fo=6174, routed)        1.266     5.617    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_clk
+                  SLICE_X31Y77         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[1]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X31Y77         FDRE (Prop_fdre_C_Q)         0.304     5.921 r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff_reg[1]/Q
+                                       net (fo=1, routed)           0.340     6.260    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_hsdata_ff[1]
+    Routing       SLICE_X29Y84         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  ps_stream_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           0.994     0.994    ps_stream_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  ps_stream_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=727, routed)         1.423     2.502    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_clk
+                  SLICE_X29Y84         FDRE                                         r  ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]/C
+                                       clock pessimism             -0.097     2.405    
+                  SLICE_X29Y84         FDRE (Hold_fdre_C_D)         0.138     2.543    ps_stream_i/control_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/dest_hsdata_ff_reg[1]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           6.260    
+                                       clock arrival                          2.543    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         3.717    
+
+
+

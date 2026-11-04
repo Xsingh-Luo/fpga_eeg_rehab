@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "UART/AXIS RTL simulation only; not physical board inference",
+  "UART_header_only_normalized_A0_to_41": true,
+  "cases": [
+    {
+      "trial": 1,
+      "post_warmup_exact_decisions": 251,
+      "final_decision": 65586237,
+      "label": 1
+    },
+    {
+      "trial": 2,
+      "post_warmup_exact_decisions": 251,
+      "final_decision": -23346001,
+      "label": 0
+    }
+  ]
+}

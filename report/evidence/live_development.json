@@ -1,0 +1,749 @@
+{
+  "protocol": "Nested leave-one-recording-out; all three recordings previously inspected, so exploratory, not a new independent test.",
+  "mapping_assumed": {
+    "C3": 3,
+    "C4": 4
+  },
+  "subject_identity_verified": false,
+  "excluded_yesterday": true,
+  "calibration": "Only sample750 to first cue, no cue labels; fixed before classified trials.",
+  "outer": [
+    {
+      "held_out_recording": 0,
+      "selected_inside_training": {
+        "calibration": "none",
+        "reg": 0.5,
+        "C": 0.01,
+        "mean": 0.7250000000000001,
+        "scores": [
+          0.55,
+          0.9
+        ]
+      },
+      "metrics": {
+        "trials": 20,
+        "correct": 12,
+        "accuracy": 0.6,
+        "balanced_accuracy": 0.6,
+        "confusion_rows_truth_cols_prediction_left_right": [
+          [
+            10,
+            0
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "wilson_95_interval": [
+          0.3865815007622531,
+          0.781193467627183
+        ],
+        "predicted_left": 18,
+        "predicted_right": 2
+      }
+    },
+    {
+      "held_out_recording": 1,
+      "selected_inside_training": {
+        "calibration": "none",
+        "reg": 0.5,
+        "C": 0.1,
+        "mean": 0.7250000000000001,
+        "scores": [
+          0.65,
+          0.8
+        ]
+      },
+      "metrics": {
+        "trials": 20,
+        "correct": 11,
+        "accuracy": 0.55,
+        "balanced_accuracy": 0.55,
+        "confusion_rows_truth_cols_prediction_left_right": [
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "wilson_95_interval": [
+          0.34208534245034233,
+          0.7418021417443759
+        ],
+        "predicted_left": 9,
+        "predicted_right": 11
+      }
+    },
+    {
+      "held_out_recording": 2,
+      "selected_inside_training": {
+        "calibration": "none",
+        "reg": 0.2,
+        "C": 0.01,
+        "mean": 0.65,
+        "scores": [
+          0.65,
+          0.65
+        ]
+      },
+      "metrics": {
+        "trials": 20,
+        "correct": 15,
+        "accuracy": 0.75,
+        "balanced_accuracy": 0.75,
+        "confusion_rows_truth_cols_prediction_left_right": [
+          [
+            10,
+            0
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "wilson_95_interval": [
+          0.531299122381256,
+          0.8881382985923343
+        ],
+        "predicted_left": 15,
+        "predicted_right": 5
+      }
+    }
+  ],
+  "combined": {
+    "trials": 60,
+    "correct": 38,
+    "accuracy": 0.6333333333333333,
+    "balanced_accuracy": 0.6333333333333333,
+    "confusion_rows_truth_cols_prediction_left_right": [
+      [
+        25,
+        5
+      ],
+      [
+        17,
+        13
+      ]
+    ],
+    "wilson_95_interval": [
+      0.5068300063010303,
+      0.7437908331277456
+    ],
+    "predicted_left": 42,
+    "predicted_right": 18
+  },
+  "final_selection": {
+    "calibration": "none",
+    "reg": 0.05,
+    "C": 0.1,
+    "mean": 0.6833333333333332,
+    "scores": [
+      0.6,
+      0.65,
+      0.8
+    ]
+  },
+  "search": [
+    {
+      "calibration": "none",
+      "reg": 0.05,
+      "C": 0.01,
+      "mean": 0.65,
+      "scores": [
+        0.6,
+        0.55,
+        0.8
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.05,
+      "C": 0.1,
+      "mean": 0.6833333333333332,
+      "scores": [
+        0.6,
+        0.65,
+        0.8
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.05,
+      "C": 1.0,
+      "mean": 0.6,
+      "scores": [
+        0.55,
+        0.6,
+        0.65
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.05,
+      "C": 10.0,
+      "mean": 0.5666666666666667,
+      "scores": [
+        0.6,
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.2,
+      "C": 0.01,
+      "mean": 0.6333333333333333,
+      "scores": [
+        0.6,
+        0.55,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.2,
+      "C": 0.1,
+      "mean": 0.6333333333333333,
+      "scores": [
+        0.6,
+        0.55,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.2,
+      "C": 1.0,
+      "mean": 0.6333333333333333,
+      "scores": [
+        0.55,
+        0.6,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.2,
+      "C": 10.0,
+      "mean": 0.6166666666666667,
+      "scores": [
+        0.55,
+        0.55,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.5,
+      "C": 0.01,
+      "mean": 0.6333333333333333,
+      "scores": [
+        0.6,
+        0.55,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.5,
+      "C": 0.1,
+      "mean": 0.6166666666666667,
+      "scores": [
+        0.55,
+        0.55,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.5,
+      "C": 1.0,
+      "mean": 0.6,
+      "scores": [
+        0.45,
+        0.6,
+        0.75
+      ]
+    },
+    {
+      "calibration": "none",
+      "reg": 0.5,
+      "C": 10.0,
+      "mean": 0.5833333333333334,
+      "scores": [
+        0.5,
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.05,
+      "C": 0.01,
+      "mean": 0.65,
+      "scores": [
+        0.6,
+        0.5,
+        0.85
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.05,
+      "C": 0.1,
+      "mean": 0.6,
+      "scores": [
+        0.65,
+        0.5,
+        0.65
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.05,
+      "C": 1.0,
+      "mean": 0.6000000000000001,
+      "scores": [
+        0.65,
+        0.55,
+        0.6
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.05,
+      "C": 10.0,
+      "mean": 0.55,
+      "scores": [
+        0.6,
+        0.5,
+        0.55
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.2,
+      "C": 0.01,
+      "mean": 0.6333333333333334,
+      "scores": [
+        0.6,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.2,
+      "C": 0.1,
+      "mean": 0.6,
+      "scores": [
+        0.65,
+        0.45,
+        0.7
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.2,
+      "C": 1.0,
+      "mean": 0.6,
+      "scores": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.2,
+      "C": 10.0,
+      "mean": 0.5833333333333334,
+      "scores": [
+        0.6,
+        0.55,
+        0.6
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.5,
+      "C": 0.01,
+      "mean": 0.6333333333333334,
+      "scores": [
+        0.6,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.5,
+      "C": 0.1,
+      "mean": 0.6,
+      "scores": [
+        0.55,
+        0.45,
+        0.8
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.5,
+      "C": 1.0,
+      "mean": 0.6333333333333333,
+      "scores": [
+        0.55,
+        0.6,
+        0.75
+      ]
+    },
+    {
+      "calibration": "diagonal",
+      "reg": 0.5,
+      "C": 10.0,
+      "mean": 0.5666666666666668,
+      "scores": [
+        0.55,
+        0.55,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.05,
+      "C": 0.01,
+      "mean": 0.65,
+      "scores": [
+        0.65,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.05,
+      "C": 0.1,
+      "mean": 0.5833333333333334,
+      "scores": [
+        0.7,
+        0.45,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.05,
+      "C": 1.0,
+      "mean": 0.6166666666666667,
+      "scores": [
+        0.65,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.05,
+      "C": 10.0,
+      "mean": 0.5833333333333334,
+      "scores": [
+        0.55,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.2,
+      "C": 0.01,
+      "mean": 0.65,
+      "scores": [
+        0.65,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.2,
+      "C": 0.1,
+      "mean": 0.5666666666666668,
+      "scores": [
+        0.65,
+        0.45,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.2,
+      "C": 1.0,
+      "mean": 0.6,
+      "scores": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.2,
+      "C": 10.0,
+      "mean": 0.5833333333333334,
+      "scores": [
+        0.55,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.5,
+      "C": 0.01,
+      "mean": 0.65,
+      "scores": [
+        0.65,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.5,
+      "C": 0.1,
+      "mean": 0.5666666666666668,
+      "scores": [
+        0.65,
+        0.45,
+        0.6
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.5,
+      "C": 1.0,
+      "mean": 0.5833333333333334,
+      "scores": [
+        0.6,
+        0.6,
+        0.55
+      ]
+    },
+    {
+      "calibration": "whitening",
+      "reg": 0.5,
+      "C": 10.0,
+      "mean": 0.5666666666666668,
+      "scores": [
+        0.5,
+        0.6,
+        0.6
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "source": "validation\\teammate_openbci_20261102\\openbci\\20261102",
+      "created": "2026-11-02T13:02:39+08:00",
+      "calibration_start": 750,
+      "calibration_stop_exclusive": 2656,
+      "calibration_matrices": {
+        "none": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "diagonal": [
+          [
+            0.004982744602074394,
+            0.0
+          ],
+          [
+            0.0,
+            0.004984807338292633
+          ]
+        ],
+        "whitening": [
+          [
+            0.008296025956349165,
+            -0.00463564208565959
+          ],
+          [
+            -0.00463564208565959,
+            0.008300532340991216
+          ]
+        ]
+      },
+      "trials": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sha256": {
+        "subj01_test20_events.csv": "992ec887d0285cc6e917f674fb2c30a161c01040024dd7ac4f0b286799a6812e",
+        "subj01_test20_meta.json": "9aa69c9e0b4bb74a585550d650893caa488ed88c0316dbc7e7f47d2a69b19232",
+        "subj01_test20_raw.bin": "22ca40b1c44a189db5a34b436df5af357b23fdfa78cd5e68da0f061c4efb5581",
+        "subj01_test20_raw.csv": "df9da5a41aff66c6adb1d7a3a17c4edc7e7851773f8e231563e87ce7456d35b0"
+      }
+    },
+    {
+      "source": "validation\\fresh_openbci_20261102_2221\\20261102",
+      "created": "2026-11-02T22:08:28+08:00",
+      "calibration_start": 750,
+      "calibration_stop_exclusive": 2026,
+      "calibration_matrices": {
+        "none": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "diagonal": [
+          [
+            0.011294486830951639,
+            0.0
+          ],
+          [
+            0.0,
+            0.009639159176448855
+          ]
+        ],
+        "whitening": [
+          [
+            0.011917163113550056,
+            -0.0020141045547177523
+          ],
+          [
+            -0.002014104554717752,
+            0.010116257370556775
+          ]
+        ]
+      },
+      "trials": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sha256": {
+        "subj01_test20_events.csv": "f55ccbd5004a87597a140a56b88556e60c06d6c9c1d21febab4abe65f27a136a",
+        "subj01_test20_meta.json": "0b078369db48947be3524356b72bbad6e41eb75aecb4d414762c78b75735adac",
+        "subj01_test20_raw.bin": "6ce696214e6d389f5dd68a263a272fa7758b934dc39adc75b47854524a0c37c3",
+        "subj01_test20_raw.csv": "4c52d76d7897aaaa46b54fead579d02dfb717cc8b3da9c2662c18aa626633abe"
+      }
+    },
+    {
+      "source": "validation\\fresh_openbci_20261102_batch2\\20261102",
+      "created": "2026-11-02T22:29:04+08:00",
+      "calibration_start": 750,
+      "calibration_stop_exclusive": 1833,
+      "calibration_matrices": {
+        "none": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "diagonal": [
+          [
+            0.006813424137387504,
+            0.0
+          ],
+          [
+            0.0,
+            0.008166904164588413
+          ]
+        ],
+        "whitening": [
+          [
+            0.008040597145602598,
+            -0.003003621378364467
+          ],
+          [
+            -0.0030036213783644675,
+            0.009840150333292805
+          ]
+        ]
+      },
+      "trials": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "sha256": {
+        "subj01_test20_events.csv": "534ee7d2d948a61fbcd1e71400b71ca8ddcfe08083eb31917fb2a06efcc22219",
+        "subj01_test20_meta.json": "c7f4f5298f0b0b81c202350fe47e23c6f93560d3c7a9584591c676347f62a0cf",
+        "subj01_test20_raw.bin": "1d0e0a71f2fdbe49bbc5c51a8d46905073ee2590ec398518b6df4c2ebade9d9e",
+        "subj01_test20_raw.csv": "eff00e61a2fa13933f43b162e0e37b87f47b935123217fb5c938f6643472ed40"
+      }
+    }
+  ],
+  "new_recording_required_for_final_acceptance": true
+}

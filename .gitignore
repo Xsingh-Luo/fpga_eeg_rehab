@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.log
+*.jou
+.Xil/
+.venv/
+*.dcp
+private/
+incoming/
+work/
+build_output/
